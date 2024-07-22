@@ -52,7 +52,7 @@ def process_text(text):
 
 # Function to get weather information
 def get_weather(city):
-    api_key = "64c1b521cbcb1af9806ea8b35d4890a6" 
+    api_key = "PLACE_YOUR_API_KEY" 
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     try:
         response = requests.get(url, timeout=10)  # Timeout is set to 10 seconds
